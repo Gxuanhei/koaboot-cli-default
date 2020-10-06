@@ -2,7 +2,7 @@
  * Greated By xuanhei on 2020/9/6
  **/
 
-const {Mapper,Select} = require('../../../lib/Annotation/MapperAnnotion')
+const {Mapper,Select} = require('koabootjs').MapperAnnotation;
 
 @Mapper
 class IndexMapper {

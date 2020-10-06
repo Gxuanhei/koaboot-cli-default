@@ -3,9 +3,9 @@
  **/
 
 
-const {Api,Controller,PostMapping,GetMapping,DeleteMapping,PutMapping,FilePostMapping} = require('../../../lib/Annotation/HttpAnnotion');
-const {Init,Autowired,Test} = require("../../../lib/Annotation/InitAnnontion")
-const IndexService = require("../Service/IndexService")
+const {Api,Controller,PostMapping,GetMapping,DeleteMapping,PutMapping,FilePostMapping} = require('koabootjs').HttpAnnotation;
+const {Init,Autowired,Test} = require("koabootjs").InitAnnotation;
+const IndexService = require("../Service/IndexService");
 /**
  * 首页api
  */
