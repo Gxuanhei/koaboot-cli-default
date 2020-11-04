@@ -19,8 +19,8 @@ class NewsController{
     @GetMapping("/index")
     getIndex(){
         return function (){
-            return "Hello,world"
-        }
+            return ["ss"];
+        };
     }
 
     @GetMapping("/index1")

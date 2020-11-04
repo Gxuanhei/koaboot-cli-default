@@ -3,23 +3,26 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "node src/main/KoaBootApplication.js --mode=development",
+    "dev": "set NODE_ENV=development&& babel-node src/main/KoaBootApplication.js",
+    "devNo": "node src/bin/bin.js",
+    "build": "babel src  --out-dir dist",
     "test": "node src/main/KoaBootApplication.js --mode=test",
-    "pro": "node src/main/KoaBootApplication.js --mode=production",
+    "pro": "set NODE_ENV=production&& npm run build && node dist/main/KoaBootApplication.js",
+    "production": "node src/bin/bin.js",
     "testTest": "node ./Test/index.js --mode=production"
   },
   "dependencies": {
     "debug": "~2.6.8",
     "eslint": "3.18.0",
-    "koabootjs": "^1.0.4"
+    "koabootjs": "^1.1.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.11.6",
-    "@babel/plugin-proposal-class-properties": "^7.10.4",
-    "@babel/plugin-proposal-decorators": "^7.10.5",
-    "@babel/register": "^7.11.5",
-    "babel-eslint": "7.1.1",
+    "babel-polyfill": "^6.26.0",
+    "babel-cli": "^6.26.0",
     "babel-plugin-transform-decorators-legacy": "^1.3.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-register": "^6.26.0",
     "babel-preset-es2015": "^6.24.1"
   }
 }

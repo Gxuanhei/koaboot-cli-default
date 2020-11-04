@@ -17,7 +17,7 @@ class IndexService{
      *  查询多条数据
      */
     selectTest(){
-        return this.indexMapper.selectTest()
+
     }
 
 
