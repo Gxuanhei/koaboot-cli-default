@@ -5,7 +5,7 @@ const path = require("path");
 module.exports = {
     //应用启动配置
     server:{
-        port: 3000, // koa运行端口
+        port: 30001, // koa运行端口
     },
     //数据库连接配置
     mysql:{
