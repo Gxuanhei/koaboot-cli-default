@@ -13,6 +13,9 @@ class IndexService{
     @Autowired(IndexMapper)
     indexMapper;
 
+
+
+
     /**
      *  查询多条数据
      */
